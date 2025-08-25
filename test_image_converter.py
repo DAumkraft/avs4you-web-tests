@@ -1,0 +1,64 @@
+import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import yaml
+
+url = "https://www.avs4you.com/AVS-Image-Converter.aspx"
+
+@pytest.fixture
+def driver():
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")  # уберите, если нужен видимый браузер
+    driver = webdriver.Chrome(options=options)
+    yield driver
+    driver.quit()
+
+def load_editor_data():
+    with open("data.yaml", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    return data["products"]["avs_image_converter"]
+
+def test_version(driver):
+    driver.get(url)
+    element = driver.find_element(By.XPATH, '//*[@id="gatsby-focus-wrapper"]/div[3]/main/div/div[7]/div[1]/div[2]/p[2]')
+    actual_value = element.text.strip()
+
+    editor_data = load_editor_data()
+    expected_value = editor_data["version"]
+
+    if actual_value == expected_value:
+        print(f"Значение на странице: {actual_value} равно ожидаемому: {expected_value}")
+    else:
+        print(f"Значение на странице: {actual_value} не равно ожидаемому: {expected_value}")
+        
+    assert actual_value == expected_value, f"Ожидалось '{expected_value}', получено '{actual_value}'"
+
+def test_short_version(driver):
+    driver.get(url)
+    element = driver.find_element(By.XPATH, '//*[@id="screenshotsCarousel"]')
+    actual_value = element.text.strip()
+
+    editor_data = load_editor_data()
+    expected_value = str(editor_data["short_version"])
+
+    if actual_value == expected_value:
+        print(f"Значение на странице: {actual_value} равно ожидаемому: {expected_value}")
+    else:
+        print(f"Значение на странице: {actual_value} не равно ожидаемому: {expected_value}")
+        
+    assert actual_value == expected_value, f"Ожидалось '{expected_value}', получено '{actual_value}'"
+
+def test_size(driver):
+    driver.get(url)
+    element = driver.find_element(By.XPATH, '//*[@id="gatsby-focus-wrapper"]/div[3]/main/div/div[7]/div[1]/div[1]/p[2]')
+    actual_value = element.text.strip()
+
+    editor_data = load_editor_data()
+    expected_value = editor_data["size"]
+
+    if actual_value == expected_value:
+        print(f"Размер элемента: {actual_value} соответствует ожидаемому: {expected_value}")
+    else:
+        print(f"Размер элемента: {actual_value} не соответствует ожидаемому: {expected_value}")
+
+    assert actual_value == expected_value, f"Ожидалось '{expected_value}', получено '{actual_value}'"
