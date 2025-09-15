@@ -39,19 +39,22 @@ def test_video_display_and_functionality(driver):
     assert "position: absolute" in style, "Video should have absolute positioning"
 
 
-def test_video_element_exists(driver):
-    driver.get(url)
+def test_video_element_exists(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     video_locator = driver.find_element(By.TAG_NAME, "video")
     assert video_locator.is_displayed(), "Тэг video должен быть видимым"
 
-def test_video_autoplay_and_loop_attributes(driver):
-    driver.get(url)
+def test_video_autoplay_and_loop_attributes(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     video = driver.find_element(By.TAG_NAME, "video")
     assert video.get_attribute("autoplay") is not None, "Проверка наличия атрибута autoplay"
     assert video.get_attribute("loop") is not None, "Проверка наличия атрибута loop"
 
-def test_video_source_format(driver):
-    driver.get(url)
+def test_video_source_format(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     video = driver.find_element(By.TAG_NAME, "video")
     source = video.find_element(By.TAG_NAME, "source")
     src = source.get_attribute("src")
@@ -59,8 +62,9 @@ def test_video_source_format(driver):
     responce = requests.get(src, timeout=1)
     assert responce.status_code == 200, "Проверка доступности видео по ссылке"
 
-def test_video_is_playable(driver):
-    driver.get(url)
+def test_video_is_playable(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     video = driver.find_element(By.TAG_NAME, "video")
     # Проверяем, что видео не заблокировано и может быть воспроизведено
     assert video.is_enabled(), "Проверка, что видео доступно для воспроизведения"

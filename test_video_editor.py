@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import yaml
 
-url = "https://www.avs4you.com/AVS-Video-Editor.aspx"
+url_end = "AVS-Video-Editor.aspx"
 
 @pytest.fixture
 def driver():
@@ -18,8 +18,9 @@ def load_editor_data():
         data = yaml.safe_load(f)
     return data["products"]["avs_video_editor"]
 
-def test_version(driver):
-    driver.get(url)
+def test_version(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     element = driver.find_element(By.XPATH, '//*[@id="gatsby-focus-wrapper"]/div[3]/main/div/div[9]/div[1]/div[2]/p[2]')
     actual_value = element.text.strip()
 
@@ -33,8 +34,9 @@ def test_version(driver):
         
     assert actual_value == expected_value, f"Ожидалось '{expected_value}', получено '{actual_value}'"
 
-def test_short_version(driver):
-    driver.get(url)
+def test_short_version(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     element = driver.find_element(By.XPATH, '//*[@id="screenshotsCarousel"]')
     actual_value = element.text.strip()
 
@@ -48,8 +50,9 @@ def test_short_version(driver):
         
     assert actual_value == expected_value, f"Ожидалось '{expected_value}', получено '{actual_value}'"
 
-def test_size(driver):
-    driver.get(url)
+def test_size(driver, base_url):
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
     element = driver.find_element(By.XPATH, '//*[@id="gatsby-focus-wrapper"]/div[3]/main/div/div[9]/div[1]/div[1]/p[2]')
     actual_value = element.text.strip()
 
