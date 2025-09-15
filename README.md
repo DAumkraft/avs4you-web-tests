@@ -48,10 +48,10 @@ pytest test_video_editor.py
 
 Возможные значения:
 
-> **production**
+**production**
 (по умолчанию) — основной сайт.
 
-> **teststatic**
+**teststatic**
 — тестовый сайт.
 
 Пример запуска тестов на тестовом сайте:
