@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import requests
 
-url = "https://www.avs4you.com/AVS-Video-Editor.aspx"
+url_end = "avs-video-editor.aspx"
 
 @pytest.fixture
 def driver():
@@ -13,10 +13,11 @@ def driver():
     yield driver
     driver.quit()
 
-def test_video_display_and_functionality(driver):
+def test_video_display_and_functionality(driver, base_url):
     """Комплексный тест для проверки видео на странице"""
 
-    driver.get(url)
+    full_url = f"{base_url}/{url_end}"
+    driver.get(full_url)
 
     # Проверяем наличие и видимость видео-элемента
     video_elements = driver.find_elements(By.TAG_NAME, "video")
