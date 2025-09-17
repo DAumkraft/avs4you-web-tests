@@ -3,12 +3,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import yaml
 
-url_end = "AVS-Video-Converter.aspx"
+url_end = "avs-free-video-converter.aspx"
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def driver():
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # уберите, если нужен видимый браузер
+    options.add_argument("--headless=new")
+    options.page_load_strategy = "eager"
     driver = webdriver.Chrome(options=options)
     yield driver
     driver.quit()

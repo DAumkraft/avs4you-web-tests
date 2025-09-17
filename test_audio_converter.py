@@ -5,7 +5,7 @@ import yaml
 
 url_end = "avs-free-audio-converter.aspx"
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")

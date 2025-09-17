@@ -5,10 +5,11 @@ import requests
 
 url_end = "avs-video-editor.aspx"
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def driver():
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # уберите, если нужен видимый браузер
+    options.add_argument("--headless=new")
+    options.page_load_strategy = "eager"
     driver = webdriver.Chrome(options=options)
     yield driver
     driver.quit()
