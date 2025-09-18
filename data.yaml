@@ -4,33 +4,40 @@ products:
     version: 11.1.2.42
     short_version: AVS Video Editor 11.1
     size: 199.47 MB
+    release_date: "2025-09-10"
   avs_video_converter:
     name: AVS Video Converter
     version: 14.1.2.42
     short_version: AVS Video Converter 14.1
     size: 114.09 MB
+    release_date: "2025-09-10"
   avs_video_remaker:
     name: AVS Video Remaker
     version: 8.1.2.42
     short_version: AVS Video Remaker 8.1
     size: 87.27 MB
+    release_date: "2025-09-10"
   avs_audio_editor:
     name: AVS Audio Editor
     version: 11.1.2.42
     short_version: AVS Audio Editor 11.1
     size: 78.24 MB
+    release_date: "2025-09-10"
   avs_audio_converter:
     name: AVS Audio Converter
     version: 11.1.2.42
     short_version: AVS Audio Converter 11.1
     size: 82.24 MB
+    release_date: "2025-09-10"
   avs_media_player:
     name: AVS Media Player
     version: 6.1.2.42
     short_version: AVS Media Player 6.1
     size: 148.20 MB
+    release_date: "2025-09-10"
   avs_image_converter:
     name: AVS Image Converter
     version: 7.1.2.42
     short_version: AVS Image Converter 7.1
     size: 51.76 MB
+    release_date: "2025-09-10"
