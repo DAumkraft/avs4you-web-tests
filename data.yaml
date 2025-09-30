@@ -4,40 +4,103 @@ products:
     version: 11.1.2.42
     short_version: AVS Video Editor 11.1
     size: 199.47 MB
+    size_kilobytes: 209154
+    size_bytes: 209154344
     release_date: "2025-09-10"
   avs_video_converter:
     name: AVS Video Converter
+    name_in_pads: Free AVS Video Converter
     version: 14.1.2.42
     short_version: AVS Video Converter 14.1
     size: 114.09 MB
+    size_kilobytes: 119635
+    size_bytes: 119635552
     release_date: "2025-09-10"
   avs_video_remaker:
     name: AVS Video Remaker
+    name_in_pads: AVS Video ReMaker
     version: 8.1.2.42
     short_version: AVS Video Remaker 8.1
     size: 87.27 MB
+    size_kilobytes: 91506
+    size_bytes: 91506968
     release_date: "2025-09-10"
   avs_audio_editor:
     name: AVS Audio Editor
     version: 11.1.2.42
     short_version: AVS Audio Editor 11.1
     size: 78.24 MB
+    size_kilobytes: 82040
+    size_bytes: 82040544
     release_date: "2025-09-10"
   avs_audio_converter:
     name: AVS Audio Converter
+    name_in_pads: Free AVS Audio Converter
     version: 11.1.2.42
     short_version: AVS Audio Converter 11.1
     size: 82.24 MB
+    size_kilobytes: 86236
+    size_bytes: 86236416
     release_date: "2025-09-10"
   avs_media_player:
     name: AVS Media Player
     version: 6.1.2.42
     short_version: AVS Media Player 6.1
     size: 148.20 MB
+    size_kilobytes: 155401
+    size_bytes: 155401736
     release_date: "2025-09-10"
   avs_image_converter:
     name: AVS Image Converter
     version: 7.1.2.42
     short_version: AVS Image Converter 7.1
     size: 51.76 MB
+    size_kilobytes: 54273
+    size_bytes: 54273720
     release_date: "2025-09-10"
+  avs_photo_editor:
+    name: Free AVS Photo Editor
+    name_in_pads: AVS Photo Editor
+    version: 3.3.4.175
+    short_version: Free AVS Photo Editor
+    size: 26.24 MB
+    size_kilobytes: 26873
+    size_bytes: 27518432
+    release_date: "2024-05-30"
+prices:
+  en:
+      oneyear: "$49.00"
+      unlimited: "$79.00"
+  de:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  fr:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  es:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  it:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  jp:
+      oneyear: "￥6300"
+      unlimited: "￥8800"
+  pl:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  da:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  ko:
+      oneyear: "$49.00"
+      unlimited: "$79.00"
+  nl:
+      oneyear: "€49.00"
+      unlimited: "€69.00"
+  pt:
+      oneyear: "$49.00"
+      unlimited: "$79.00"
+  zh:
+      oneyear: "¥333"
+      unlimited: "¥528"
