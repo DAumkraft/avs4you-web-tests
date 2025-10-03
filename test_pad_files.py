@@ -178,4 +178,4 @@ def test_pad_individual(product_name, language, base_url):
         compare_pad_data(product_name, pad_data, expected_data)
 
     except Exception as e:
-        pytest.fail(f"❌ Ошибка при тестировании {product_name} ({language}): {e}")
+        pytest.fail(f"❌ Ошибка в {product_name} ({language}): {e}")
