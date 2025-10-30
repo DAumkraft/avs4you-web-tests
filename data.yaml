@@ -75,8 +75,8 @@ prices:
       oneyear: "€49.00"
       unlimited: "€69.00"
   fr:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+      oneyear: "Facturation annuelle 49.00 €"
+      unlimited: "69.00 € facturés"
   es:
       oneyear: "€49.00"
       unlimited: "€69.00"
