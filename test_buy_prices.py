@@ -33,7 +33,7 @@ def test_check_price(lang, driver, base_url):
     if lang != "fr":
         actual_value = driver.find_element(By.CSS_SELECTOR,".buy-block:not(.unlimited-block) [font-weight='500'].current-price-text")  
     else:
-        actual_value = driver.find_element(By.CSS_SELECTOR,".buy-block .annual-billing-text")  
+        actual_value = driver.find_element(By.CSS_SELECTOR,".buy-block .annual-billing-text span")  
     price_1year_onsite = actual_value.text
     prices_from_yaml = list_of_langs[lang]
     price_1year_yaml = prices_from_yaml["oneyear"]
@@ -42,7 +42,7 @@ def test_check_price(lang, driver, base_url):
     if lang != "fr":
         actual_value = driver.find_element(By.CSS_SELECTOR,".buy-block.unlimited-block .current-price-text") 
     else:
-        actual_value = driver.find_element(By.CSS_SELECTOR,".unlimited-block .annual-billing-text")  
+        actual_value = driver.find_element(By.CSS_SELECTOR,".unlimited-block .annual-billing-text span")  
     price_unlimited_onsite = actual_value.text
     prices_from_yaml = list_of_langs[lang]
     price_unlimited_yaml = prices_from_yaml["unlimited"]
