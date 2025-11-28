@@ -1,63 +1,63 @@
 products:
   avs_video_editor:
     name: AVS Video Editor
-    version: 11.1.3.4
+    version: 11.1.4.3
     short_version: AVS Video Editor 11.1
-    size: 201.44 MB
-    size_kilobytes: 206272
-    size_bytes: 211223008
-    release_date: "2025-10-02"
+    size: 201.45 MB
+    size_kilobytes: 206290
+    size_bytes: 211240624
+    release_date: "2025-11-27"
   avs_video_converter:
     name: AVS Video Converter
     name_in_pads: Free AVS Video Converter
-    version: 14.1.3.4
+    version: 14.1.4.3
     short_version: AVS Video Converter 14.1
-    size: 115.77 MB
-    size_kilobytes: 118544
-    size_bytes: 121388752
-    release_date: "2025-10-02"
+    size: 115.78 MB
+    size_kilobytes: 118557
+    size_bytes: 121401960
+    release_date: "2025-11-27"
   avs_video_remaker:
     name: AVS Video Remaker
     name_in_pads: AVS Video ReMaker
-    version: 8.1.3.4
+    version: 8.1.4.3
     short_version: AVS Video Remaker 8.1
-    size: 89.19 MB
-    size_kilobytes: 91326
-    size_bytes: 93517480
-    release_date: "2025-10-02"
+    size: 89.22 MB
+    size_kilobytes: 91362
+    size_bytes: 93555136
+    release_date: "2025-11-27"
   avs_audio_editor:
     name: AVS Audio Editor
-    version: 11.1.3.4
+    version: 11.1.4.3
     short_version: AVS Audio Editor 11.1
-    size: 79.85 MB
-    size_kilobytes: 81767
-    size_bytes: 83729064
-    release_date: "2025-10-02"
+    size: 79.83 MB
+    size_kilobytes: 81749
+    size_bytes: 83711024
+    release_date: "2025-11-27"
   avs_audio_converter:
     name: AVS Audio Converter
     name_in_pads: Free AVS Audio Converter
-    version: 11.1.3.4
+    version: 11.1.4.3
     short_version: AVS Audio Converter 11.1
     size: 83.90 MB
-    size_kilobytes: 85909
-    size_bytes: 87970648
-    release_date: "2025-10-02"
+    size_kilobytes: 85918
+    size_bytes: 87979936
+    release_date: "2025-11-27"
   avs_media_player:
     name: AVS Media Player
-    version: 6.1.3.4
+    version: 6.1.4.3
     short_version: AVS Media Player 6.1
-    size: 151.52 MB
-    size_kilobytes: 155159
-    size_bytes: 158882744
-    release_date: "2025-10-02"
+    size: 151.56 MB
+    size_kilobytes: 155201
+    size_bytes: 158926208
+    release_date: "2025-11-27"
   avs_image_converter:
     name: AVS Image Converter
-    version: 7.1.3.4
+    version: 7.1.4.3
     short_version: AVS Image Converter 7.1
-    size: 53.44 MB
-    size_kilobytes: 54727
-    size_bytes: 56040288
-    release_date: "2025-10-02"
+    size: 53.43 MB
+    size_kilobytes: 54717
+    size_bytes: 56030376
+    release_date: "2025-11-27"
   avs_photo_editor:
     name: Free AVS Photo Editor
     name_in_pads: AVS Photo Editor
@@ -69,38 +69,38 @@ products:
     release_date: "2024-05-30"
 prices:
   en:
-      oneyear: "$49.00"
-      unlimited: "$79.00"
+    oneyear: "$49.00"
+    unlimited: "$79.00"
   de:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   fr:
-      oneyear: "49.00 €"
-      unlimited: "69.00 €"
+    oneyear: "49.00 €"
+    unlimited: "69.00 €"
   es:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   it:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   jp:
-      oneyear: "￥7200"
-      unlimited: "￥10800"
+    oneyear: "￥7200"
+    unlimited: "￥10800"
   pl:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   da:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   ko:
-      oneyear: "$49.00"
-      unlimited: "$79.00"
+    oneyear: "$49.00"
+    unlimited: "$79.00"
   nl:
-      oneyear: "€49.00"
-      unlimited: "€69.00"
+    oneyear: "€49.00"
+    unlimited: "€69.00"
   pt:
-      oneyear: "$49.00"
-      unlimited: "$79.00"
+    oneyear: "$49.00"
+    unlimited: "$79.00"
   zh:
-      oneyear: "¥333"
-      unlimited: "¥528"
+    oneyear: "¥333"
+    unlimited: "¥528"
